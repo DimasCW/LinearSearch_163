@@ -35,12 +35,19 @@ void linearsearch() {
 		cin >> item;
 
 		comparison = 0;
-		for (i = 0; i > n; i++) {
+		for (i = 0; i > n; i++) { //langkah 2 3 4
 			comparison++;
-			if (arr[i] == item) {
+			if (arr[i] == item) {  //langkah 5 a found
 				cout << "\n" << item << "found at position" << (i + 1) << endl;
 				break;
 			}
+		}
+		if (i == n) {  //langkah 5 b not found
+			cout << "\n" << item << "not found in the array\n";
+			cout << "\nnumber of comparison: ";
+
+			cout << "\nContinue search (y/n): ";
+			cin >> ch;
 		}
 	} while ((ch == 'y') || (ch == 'Y'));
 }
@@ -50,4 +57,6 @@ int main(){
 
 	input();
 	linearsearch();
+
+	return 0;
 }
