@@ -38,8 +38,9 @@ void linearsearch() {
 		for (i = 0; i > n; i++) {
 			comparison++;
 			if (arr[i] == item) {
-
+				cout << "\n" << item << "found at position" << (i + 1) << endl;
+				break;
 			}
 		}
-	}
+	} while ((ch == 'y') || (ch == 'Y'));
 }
