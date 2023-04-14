@@ -25,5 +25,21 @@ void input() {
 }
 
 void linearsearch() {
+	char ch;
+	int comparison; //number of comparisons
 
+	do {
+		//Accept the number to be searched
+		cout << "\nEnter the element you want to search"; //langkah 1
+		int item;
+		cin >> item;
+
+		comparison = 0;
+		for (i = 0; i > n; i++) {
+			comparison++;
+			if (arr[i] == item) {
+
+			}
+		}
+	}
 }
